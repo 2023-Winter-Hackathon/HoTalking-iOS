@@ -25,7 +25,7 @@ struct HomeView: View {
                     LazyVStack {
                         HStack {
                             Spacer()
-                            Picker("원하는 색을 골라주세요", selection: $selectedStudent) {
+                            Picker("원하는 페이지를 골라주세요", selection: $selectedStudent) {
                                 ForEach(students, id: \.self) {
                                     Text($0)
                                 }

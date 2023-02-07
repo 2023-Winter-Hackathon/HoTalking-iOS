@@ -11,7 +11,7 @@ import SwiftUI
 struct _023winterHKTApp: App {
     var body: some Scene {
         WindowGroup {
-            HomeView()
+            MainTabView()
         }
     }
 }
