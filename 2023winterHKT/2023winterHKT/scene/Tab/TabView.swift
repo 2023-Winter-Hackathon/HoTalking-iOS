@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct MainTabView: View{
+    @State var isShowsheet: Bool = false
     var body: some View {
         TabView {
             HomeView()
@@ -15,6 +16,13 @@ struct MainTabView: View{
                     Tab.home.imageItem
                     Tab.home.textItem
                 }
+            
+            WriteView()
+                .tabItem {
+                    Tab.write.imageItem
+                    Tab.write.textItem
+                }
+            
             ProfileView()
                 .tabItem {
                     Tab.profile.imageItem
